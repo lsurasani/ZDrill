@@ -1,0 +1,20 @@
+body {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#title {
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+#jxgbox {
+    float: right;
+    left: -30%;
+}
+
+#jxgbox2 {
+    float: right;
+    left: 50%;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta charset = "UTF-8">
+<html>
+<head>
+<title>Z-Drill</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<link rel="stylesheet" type="text/css" href="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraph.css" />
+<link rel="stylesheet" type="text/css" href="ZDrill.css"/>
+<script type="text/javascript" src="http://jsxgraph.uni-bayreuth.de/distrib/jsxgraphcore.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/2.4.0/math.min.js"></script>
+<script type="text/javascript" src="ZDrill.js"></script>
+</head>
+<body>
+    <h1 id = "title"> Z-DRILL </h1>
+    <br> Input 1 <br>
+    <input id = "r11" type = "text" name = "radius11" value = "r = 1" readonly="readonly"> <br>
+    <input id = "theta1" type = "text" name = "theta11" value = "theta = 0.50*pi" readonly="readonly"> <br>
+
+    <div style="width:960px">
+        <div id="jxgbox" class="jxgbox" style="width:300px; height:300px;"></div>
+    </div>
+
+    <div style="width:960px">
+        <div id="jxgbox2" class="jxgbox2" style="width:300px; height:300px;"></div>
+    </div>
+
+    <div id = "r"></div><br>
+
+    <br> Input 2 <br>
+    <input id = "r12" type = "text" name = "radius12" value = "r = 1" readonly="readonly"> <br>
+    <input id = "theta2" type = "text" name = "theta12" value = "theta = 0.25*pi" readonly="readonly"><br>
+    <div id = "r23"></div><br>
+    <br>
+    What operation would you like to perform? <br>
+    <input id = "add" type="radio" name = "func" value = "Addition" checked> Addition <br>
+    <input id = "sub" type="radio" name = "func" value = "Subtraction"> Subtraction <br>
+    <input id = "mul" type="radio" name = "func" value = "Multiplication"> Multiplication <br>
+    <input id = "divi" type="radio" name = "func" value = "Division"> Division <br>
+    <input id = "inv" type="radio" name = "func" value = "Inversion"> Inverse <br>
+    <input id = "conj" type="radio" name = "func" value = "Conjugation"> Conjugate <br>
+    <br>
+
+    <br> <input id = "rect" type = "checkbox" name = "recta" value = "Rect Form"> Show Rect Form <br>
+    <input id = "answer" type = "checkbox" name = "answ" value = "Show Answer"> Show Answer <br>
+    <button onclick = "displayAnswer()"> Submit </button><br>
+    <button onclick="generateNewQuestion()"> New Quiz </button>
+    <br>
+
+    <br> Your Guess <br>
+    r:
+    <input id = "rg" type = "text" name = "rguess"> <br>
+    theta:
+    <input id = "thetag" type = "text" name = "thetaGuess"> *pi <br>
+    <button onclick = "displayGuess()">Submit Guess!</button><br>
+
+</body>
+</html>
